@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://JungleDirtTileSet.tres" type="TileSet" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Portal.tscn" type="PackedScene" id=3]
+
+[node name="World_2" type="Node"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 327690, 0, 0, 327691, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 188.584, 105.796 )
+
+[node name="Portal" parent="." instance=ExtResource( 3 )]
+position = Vector2( 320, 96 )
+next_world = "res://World.tscn"
