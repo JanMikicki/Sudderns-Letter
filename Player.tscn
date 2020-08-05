@@ -17,20 +17,20 @@ animations = [ {
 "name": "Fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "Idle",
-"speed": 5.0
+"name": "Run",
+"speed": 8.0
 }, {
 "frames": [ ExtResource( 7 ) ],
 "loop": false,
 "name": "Jump",
 "speed": 4.0
 }, {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "Run",
-"speed": 8.0
+"name": "Idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
